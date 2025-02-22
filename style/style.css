@@ -5,6 +5,7 @@
 body{
     font-family: "Poppins";
     margin: 0px;
+    background-color: azure;
 }
 .center{
     width: 85%;
@@ -97,6 +98,30 @@ body{
 .collection-heading{
     text-align: center
 }
+.collection-card{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+    background-color: antiquewhite;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px antiquewhite;
+}
+.card .card-image{
+    width: 100%;
+}
+.card h3{
+    font-weight: 600;
+}
+.card h4{
+    font-weight: 500;
+}
+.card p{
+    font-size: 14px;
+}
 
 
 
@@ -168,7 +193,27 @@ body{
     .site a img{
        height: 16px;
     }
-    
+    .collection-heading{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .collection-card{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    .card h3{
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+    .card h4{
+        font-size: 0.65rem;
+        font-weight: 500;
+    }
+    .card p{
+        margin-top: 0px;
+        font-size: 0.55rem;
+    }
 }
 
 
@@ -233,6 +278,21 @@ body{
     }    
     .site a img{
        height: 20px;
+    }    
+    .collection-card{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;    
+    }    
+    .card h3{
+        font-size: 1rem;
+    }
+    .card h4{
+        font-size: 0.85rem;
+    }
+    .card p{
+        font-size: 0.75rem;
     }
     
 }
